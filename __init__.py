@@ -33,7 +33,7 @@ def meteo():
 
 @app.route('/histogramme/')
 def meteo():
-    response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=0&lon=0&appid=xxx')
+    response = urlopen('https://samples.openweathermap.org/data/2.5/forecast?lat=48.8566&lon=2.3522&appid=xxx')
     raw_content = response.read()
     json_content = json.loads(raw_content.decode('utf-8'))
     results = []
