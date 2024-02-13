@@ -11,6 +11,10 @@ app = Flask(__name__)
 def MaPremiereAPI():
     return "<h2>Ma page de contact</h2>"
 
+@app.route("/rapport/")
+def mongraphique():
+    return render_template("graphique.html")
+  
 @app.route('/')
 def hello_world():
     return render_template('hello.html')
