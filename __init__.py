@@ -8,15 +8,15 @@ import sqlite3
 app = Flask(__name__)
 
 @app.route("/contact/")
-def MaPremiereAPI():
+def Ma_PremiereAPI():
     return "<h2>Ma page de contact</h2>"
 
 @app.route("/rapport/")
-def mongraphique():
+def mon_graphique():
     return render_template("graphique.html")
 
 @app.route("/histogramme/")
-def mongraphique2():
+def mon_graphique2():
     return render_template("histogramme.html")
   
 @app.route('/')
