@@ -16,7 +16,7 @@ def mon_graphique():
     return render_template("graphique.html")
 
 @app.route("/histogramme/")
-def mon_graphique2():
+def mon_graphiquedeux():
     return render_template("histogramme.html")
   
 @app.route('/')
